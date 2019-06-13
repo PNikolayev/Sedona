@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<meta charset="utf-8">
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="header-logo" href="#"><img src="img/logo.png" alt="logo">
+			</a>
+			<ul class="header-menu">
+			    <li><a href="#">Information</a></li>
+			    <li><a href="#">Photo and video</a></li>
+			    <li><a href="#">Map of state</a></li>
+			    <li><a href="#">Hotels</a></li>	
+		    </ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<section class="filters">
+			<h1 class="visually-hidden">filters</h1>
+			<fieldset class="infra">
+				<legend>Infrastructure</legend>
+
+				<input class="visually-hidden" type="checkbox" name="pool" id="pool" checked>
+				<label for="pool">Swimming pool</label>
+
+				<input class="visually-hidden" type="checkbox" name="parking" id="parking">
+				<label for="parking">Parking</label>
+
+				<input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+				<label for="wi-fi">wi-fi</label>
+
+			</fieldset>
+
+			<fieldset class="housing-type">
+				<legend>Housing type</legend>
+
+				<input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
+				<label for="hotel">hotel</label>
+
+				<input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
+				<label for="motel">motel</label>
+
+				<input class="visually-hidden" type="checkbox" name="appartaments" id="appartaments" checked>
+				<label for="appartaments">appartaments</label>
+
+			</fieldset>
+			<fieldset class="price-range">
+				<div class="range-wrapper">
+				    <legend>price per 24h</legend>
+				    <p>
+					    <input type="text" name="min" id="min" value="0">
+					    <label for="min" class="visually-hidden"></label>
+					</p>
+					<p>
+					    <input type="text" name="max" id="max" value="500">
+					    <label for="max" class="visually-hidden"></label>
+					</p>
+					    <input type="range" name="range" min="0" max="500" id="range">
+				    
+				    <button class="range-button">show</button>
+                </div>
+			</fieldset>
+		</section>
+
+
+		<section class="hotels-list">
+			<h1 class="visually-hidden">sort hotels</h1>
+			<div class="sort-menu">
+			    <p class="search-result">found: 3</p>
+			    <p class="sort-by">sort by:</p>
+			    <ul class="sort-list">
+				    <li><a href="#">price</a></li>
+				    <li><a href="#">type</a></li>
+				    <li><a href="#">rating</a></li>
+			    </ul>
+    
+			    <ul class="sort-arrows">
+                    <li><a href="#">up</a></li>
+                    <li><a href="#">down</a></li>
+			    </ul>
+		    </div>
+
+
+		    <article class="hotel-article amara">
+		    	<h2 class="visually-hidden"> amara resort & spa</h2>
+		    	
+                    <a href="#" class="link"><img src="img/amara.jpg" alt="amara"></a>
+                    <div class="price-block">
+                    	<h3>amara resort & spa</h3>
+                    	
+                    	<pre class="type">hotel     from 100$</pre>
+                    
+                    	
+                    	<a class="learn-more" href="#">Learn-more</a>
+                    	<button class="book">book it</button>
+                    </div>
+                
+                <p class="rating">Rating:8,5</p>
+		    </article>
+
+		    <article class="hotel-article desert">
+		    	<h2 class="visually-hidden"> desert quail inn</h2>
+                
+                    <a href="#" class="link"><img src="img/desert.jpg" alt="desert"></a>
+                    <div class="price-block">
+                    	<h3>desert quail inn</h3>
+                    	<pre class="type"> motel   from 80$</pre>
+                    	<a class="learn-more" href="#">Learn-more</a>
+                    	<button class="book">book it</button>
+                    </div>
+                
+                <p class="rating">Rating:8,9</p>
+		    </article>
+
+		    <article class="hotel-article villas">
+		    	<h2 class="visually-hidden"> villas at poco diablo</h2>
+                
+                    <a href="#" class="link"><img src="img/villas.jpg" alt="villas"></a>
+                    <div class="price-block">
+                    	<h3>villas at poco diablo</h3>
+                    	<pre class="type"> apartaments</pre>
+                    	<a class="learn-more" href="#">Learn-more</a>
+                    	<button class="book">book it</button>
+                    </div>
+                
+                <p class="rating">Rating:9,2</p>
+		    </article>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<div class="footer-wrapper">
+			<p class="visit-sedona">#visitsedona</p>
+			<ul class="socials-list">
+				<li><a href="">twitter</a></li>
+				<li><a href="">facebook</a></li>
+				<li><a href="">youtube</a></li>
+			</ul>
+			<p class="html-academy">website by</p>
+		</div>
+	</footer>
+</body>

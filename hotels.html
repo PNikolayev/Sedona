@@ -13,10 +13,10 @@
 			<a class="header-logo" href="#"><img src="img/logo.png" alt="logo">
 			</a>
 			<ul class="header-menu">
-			    <li><a href="#">Information</a></li>
-			    <li><a href="#">Photo and video</a></li>
-			    <li><a href="#">Map of state</a></li>
-			    <li><a href="#">Hotels</a></li>	
+			    <li class="menu-item"><a href="#">Information</a></li>
+			    <li class="menu-item"><a href="#">Photo and video</a></li>
+			    <li class="menu-item"><a href="#">Map of state</a></li>
+			    <li class="menu-item"><a href="#">Hotels</a></li>	
 		    </ul>
 		</nav>
 	</header>
@@ -53,15 +53,19 @@
 			</fieldset>
 			<fieldset class="price-range">
 				<div class="range-wrapper">
-				    <legend>price per 24h</legend>
-				    <p>
-					    <input type="text" name="min" id="min" value="0">
-					    <label for="min" class="visually-hidden"></label>
-					</p>
-					<p>
-					    <input type="text" name="max" id="max" value="500">
-					    <label for="max" class="visually-hidden"></label>
-					</p>
+					
+				    <legend class="per-24">price per 24h</legend>
+				    <div class="price-wrapper">
+				        <p>
+				    	    <label class="from" for="min" >FROM</label>
+					        <input type="text" name="min" id="min" value="0">
+					    
+					    </p>
+					    <p>
+					    	<label class="to" for="max" >TO</label>
+					        <input type="text" name="max" id="max" value="500">
+					    </p>
+				    </div>
 					    <input type="range" name="range" min="0" max="500" id="range">
 				    
 				    <button class="range-button">show</button>
@@ -76,14 +80,14 @@
 			    <p class="search-result">found: 3</p>
 			    <p class="sort-by">sort by:</p>
 			    <ul class="sort-list">
-				    <li><a href="#">price</a></li>
+				    <li><a class="sort-list-current" href="#">price</a></li>
 				    <li><a href="#">type</a></li>
 				    <li><a href="#">rating</a></li>
 			    </ul>
     
 			    <ul class="sort-arrows">
-                    <li><a href="#">up</a></li>
-                    <li><a href="#">down</a></li>
+                    <li><a class="up" href="#"></a></li>
+                    <li><a class="down arrow-current" href="#"></a></li>
 			    </ul>
 		    </div>
 
@@ -102,7 +106,10 @@
                     	<button class="book">book it</button>
                     </div>
                 
-                <p class="rating">Rating:8,5</p>
+                <p class="rating">
+                	<span class="stars-amara"></span>
+                	<span  class="rating-value">Rating:8,5</span>
+                </p>
 		    </article>
 
 		    <article class="hotel-article desert">
@@ -111,12 +118,15 @@
                     <a href="#" class="link"><img src="img/desert.jpg" alt="desert"></a>
                     <div class="price-block">
                     	<h3>desert quail inn</h3>
-                    	<pre class="type"> motel   from 80$</pre>
+                    	<pre class="type">motel   from 80$</pre>
                     	<a class="learn-more" href="#">Learn-more</a>
                     	<button class="book">book it</button>
                     </div>
                 
-                <p class="rating">Rating:8,9</p>
+                <p class="rating">
+                	<span class="stars-desert"></span>
+                	<span class="rating-value"> Rating:8,9</span>
+                </p>
 		    </article>
 
 		    <article class="hotel-article villas">
@@ -125,12 +135,15 @@
                     <a href="#" class="link"><img src="img/villas.jpg" alt="villas"></a>
                     <div class="price-block">
                     	<h3>villas at poco diablo</h3>
-                    	<pre class="type"> apartaments</pre>
+                    	<pre class="type">apartaments    from 60$</pre>
                     	<a class="learn-more" href="#">Learn-more</a>
                     	<button class="book">book it</button>
                     </div>
                 
-                <p class="rating">Rating:9,2</p>
+                <p class="rating">
+                	<span class="stars-devils"></span>
+                	<span class="rating-value"> Rating:9,2</span>
+                </p>
 		    </article>
 		</section>
 	</main>
@@ -138,11 +151,11 @@
 		<div class="footer-wrapper">
 			<p class="visit-sedona">#visitsedona</p>
 			<ul class="socials-list">
-				<li><a href="">twitter</a></li>
-				<li><a href="">facebook</a></li>
-				<li><a href="">youtube</a></li>
+				<li class="visually-hidde"><a class="twitter" href=""></a></li>
+				<li class="visually-hidde"><a class="fb" href=""></a></li>
+				<li class="visually-hidde"><a class="youtube" href=""></a></li>
 			</ul>
-			<p class="html-academy">website by</p>
+			<p class="html-academy">website by<a href="#" class="academy-link"></a> </p>
 		</div>
 	</footer>
 </body>

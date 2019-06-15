@@ -16,7 +16,7 @@
 			    <li class="menu-item"><a href="#">Information</a></li>
 			    <li class="menu-item"><a href="#">Photo and video</a></li>
 			    <li class="menu-item"><a href="#">Map of state</a></li>
-			    <li class="menu-item"><a href="#">Hotels</a></li>	
+			    <li class="menu-item"><a class="menu-item-current" href="#">Hotels</a></li>	
 		    </ul>
 		</nav>
 	</header>
@@ -44,7 +44,7 @@
 				<input class="visually-hidden" type="checkbox" name="hotel" id="hotel" checked>
 				<label for="hotel">hotel</label>
 
-				<input class="visually-hidden" type="checkbox" name="motel" id="motel" checked>
+				<input class="visually-hidden" type="checkbox"  name="motel" id="motel" checked>
 				<label for="motel">motel</label>
 
 				<input class="visually-hidden" type="checkbox" name="appartaments" id="appartaments" checked>
@@ -80,14 +80,14 @@
 			    <p class="search-result">found: 3</p>
 			    <p class="sort-by">sort by:</p>
 			    <ul class="sort-list">
-				    <li><a class="sort-list-current" href="#">price</a></li>
-				    <li><a href="#">type</a></li>
-				    <li><a href="#">rating</a></li>
+				    <li class="sort-item"><a class="sort-list-current" href="#">price</a></li>
+				    <li class="sort-item"><a href="#">type</a></li>
+				    <li class="sort-item"><a href="#">rating</a></li>
 			    </ul>
     
 			    <ul class="sort-arrows">
-                    <li><a class="up" href="#"></a></li>
-                    <li><a class="down arrow-current" href="#"></a></li>
+                    <li class="arrow"><a class="up" href="#"></a></li>
+                    <li class="arrow"><a class="down arrow-current" href="#"></a></li>
 			    </ul>
 		    </div>
 
@@ -97,7 +97,7 @@
 		    	
                     <a href="#" class="link"><img src="img/amara.jpg" alt="amara"></a>
                     <div class="price-block">
-                    	<h3>amara resort & spa</h3>
+                    	<h3><a href="#" class="hotel-link">amara resort & spa</a></h3>
                     	
                     	<pre class="type">hotel     from 100$</pre>
                     
@@ -117,7 +117,7 @@
                 
                     <a href="#" class="link"><img src="img/desert.jpg" alt="desert"></a>
                     <div class="price-block">
-                    	<h3>desert quail inn</h3>
+                    	<h3><a href="#" class="hotel-link">desert quail inn</a></h3>
                     	<pre class="type">motel   from 80$</pre>
                     	<a class="learn-more" href="#">Learn-more</a>
                     	<button class="book">book it</button>
@@ -134,7 +134,7 @@
                 
                     <a href="#" class="link"><img src="img/villas.jpg" alt="villas"></a>
                     <div class="price-block">
-                    	<h3>villas at poco diablo</h3>
+                    	<h3><a href="#" class="hotel-link">villas at poco diablo</a></h3>
                     	<pre class="type">apartaments    from 60$</pre>
                     	<a class="learn-more" href="#">Learn-more</a>
                     	<button class="book">book it</button>
@@ -151,9 +151,9 @@
 		<div class="footer-wrapper">
 			<p class="visit-sedona">#visitsedona</p>
 			<ul class="socials-list">
-				<li class="visually-hidde"><a class="twitter" href=""></a></li>
-				<li class="visually-hidde"><a class="fb" href=""></a></li>
-				<li class="visually-hidde"><a class="youtube" href=""></a></li>
+				<li class="visually-hidde"><a class="social-link twitter" href=""></a></li>
+				<li class="visually-hidde"><a class="social-link fb" href=""></a></li>
+				<li class="visually-hidde"><a class="social-link youtube" href=""></a></li>
 			</ul>
 			<p class="html-academy">website by<a href="#" class="academy-link"></a> </p>
 		</div>

@@ -14,7 +14,7 @@ body{
 outline: 1px solid #000; 
 }*/
 
-a{
+.menu-item a{
 	text-decoration: none;
 	color:#000000;
 	font-weight: 700;
@@ -58,6 +58,10 @@ fieldset{
 .header-menu li:nth-child(3){
 	width:288px;
 	text-align: right;	
+}
+button,
+a{
+	cursor: pointer;
 }
 
 .header-menu li:nth-child(4){
@@ -119,6 +123,9 @@ fieldset{
 	display:flex;
 	color:white;
 }
+input[type=range]{
+    color:red;
+}
 .infra label,
 .housing-type label{
 	margin-left:40px;
@@ -136,6 +143,13 @@ input[type="checkbox"]:checked + label::before{
 	position: absolute;
 	content:url(img/checkbox-on.png);
 	left:-35px;
+
+}
+input[type="checkbox"]:disabled + label::before{
+	position: absolute;
+	content:url(img/checkbox-on.png);
+	left:-35px;
+	opacity:0.2;
 
 }
 .range-wrapper input[type="text"]{
@@ -227,6 +241,7 @@ legend{
 	width:328px;
 
 }
+
 .range-button{
     width:135px;
     padding:7px 35px;
@@ -238,6 +253,10 @@ legend{
     text-transform: uppercase;
     margin:0 auto;
     margin-top:23px;
+}
+.range-button:hover{
+	background-color:#ffffff;
+	color:#000000;
 }
 .sort-menu{
 	align-items:center;
@@ -263,6 +282,7 @@ legend{
 
 }
 .sort-list-current{
+	text-decoration:none;
 	display:block;
 	border-bottom:none;
 	color:#81b3d2;
@@ -307,6 +327,8 @@ legend{
 	content:url(img/down-dir.png);
 	transform: rotate(360deg);
 	opacity:1;
+	pointer-events: none;
+
 
 }
 
@@ -426,7 +448,8 @@ h3{
 }
 .menu-item{
 	padding:18px 0;
-}	
+}
+
 .visual b{
 	font-size:21px;
 }
@@ -572,6 +595,7 @@ h3{
 	background-position: 50% 50%;
 	
 }
+
 .academy-link{
 	display:block;
 	width:120px;
@@ -581,8 +605,69 @@ h3{
 	background-position: 0 50%;
 	margin-left:8px;
 }
+.academy-link:hover{
+	
+	background-image: url(img/academy-hover.png);
+	
+}
+.academy-link:active{
+	opacity:0.3;
+}
 .per-24{
 	margin-bottom:10px;
+}
+.menu-item a:hover{
+    color:#81b3d2;
+}
+.menu-item a:active{
+	color:lightgrey;
+}	
+.search-button:hover{
+	background-color:#604e43;
+	cursor: pointer;
+}
+.search-button:active{
+	background-color:#503e33;
+	color:lightgrey;
+	cursor: pointer;
+}
+.social-link:hover{
+	background-color:#669ec0; 
+	cursor:pointer;
+}
+.social-link:active{
+	background-color:#5496bd; 
+	cursor:pointer; 
+}
+.menu-item .menu-item-current{
+	color:#766357;
+	pointer-events: none;
+
+}
+.sort-item a{
+	text-decoration:none;
+}
+.sort-item a:hover{
+    color:#81b3d2;
+}
+.sort-item a:active{
+    color:black;
+}
+
+.hotel-link{
+	color:black;
+	text-decoration:none;
+}
+.hotel-link:hover{
+	color:#81b3d2;
+
+}
+
+.hotel-link:active{
+	color:lightgrey;
+
+}
+
 
 
 
